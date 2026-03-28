@@ -3,7 +3,7 @@ const seededAt = new Date().toISOString()
 let projects = [
   {
     id: 1,
-    name: 'Application review workshop',
+    name: 'Application for mobile platform.',
     description: 'Cover apps',
     created_at: seededAt,
     updated_at: seededAt,
@@ -30,8 +30,8 @@ let tasks = [
   {
     id: 2,
     project_id: 1,
-    title: 'Collect new screenshots',
-    description: 'Replace old portfolio images.',
+    title: 'Collect screenshots of mobile application',
+    description: 'Gather new images for the project',
     status: 'todo',
     created_at: seededAt,
     updated_at: seededAt,
