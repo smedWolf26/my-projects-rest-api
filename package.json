@@ -5,7 +5,10 @@
     "dev": "wrangler dev",
     "deploy": "wrangler deploy --minify",
     "cf-typegen": "wrangler types --env-interface CloudflareBindings",
-    "db:generate": "drizzle-kit generate"
+    "db:generate": "drizzle-kit generate",
+    "db:migrate:local": "wrangler di migrations apply projects_db --local",
+    "db:migrate:remote": "wrangler di migrations apply projects_db --remote"
+
   },
   "dependencies": {
     "drizzle-orm": "^0.45.2",
